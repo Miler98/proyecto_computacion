@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container signup">
+        <form action="DB/registrarse.php" method="POST" name="frm_signup" id="frm_signup"> 
+            <h1 class="text-align-center">Registrarse</h1>
+            <div class="formulario">
+                
+                <div class="campo-entrada">
+                    <input type="number" name="Identificacion" id="identificacion" placeholder="Identificación"
+                    maxlength="10" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                    <span class="border"></span>
+                    <small class="error" id="error">Digite su Identificación</small>
+                </div>
+            
+
+                <div class="campo-entrada">
+                    <input type="text" name="names" id="names" placeholder="Nombres">
+                    <span class="border"></span>
+                    <small class="error" id="error">Digite su nombre</small>
+                </div>
+                <div class="campo-entrada">
+                    <input type="text" name="lastnames" id="lastnames" placeholder="Apellidos">
+                    <span class="border"></span>
+                    <small class="error" id="error">Digite sus apellidos</small>
+                </div>
+
+                <!--
+                <div class="campo-entrada">
+                    <input type="date" name="date" id="date" placeholder="Fecha de nacimiento">
+                    <span class="border"></span>
+                    <small class="error" id="error">Digite su fecha de nacimiento</small>
+                </div>
+                -->
+
+                <div class="campo-entrada">
+                    <input type="text" name="username" id="username" placeholder="Correo">
+                    <span class="border"></span>
+                    <small class="error" id="error">Digite su correo electrónico</small>
+                </div>
+                <div class="campo-entrada">
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                    <span class="border"></span>
+                    <small class="error" id="error">Digite su contraseña</small>
+                </div>
+                <div class="campo-entrada">
+                    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirmar contraseña">
+                    <span class="border"></span>
+                    <small class="error" id="error">Las contraseñas deben coincidir</small>
+                </div>
+                <!-- <button type="submit" id="enviar-datos">Regístrate</button> -->
+                <input id="enviar-datos" class="button" type="button" value="Regístrate">
+                <div class="registrar-cuenta">
+                    ¿Ya tienes una cuenta?<a href="index.html"> Inicia sesión</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="scripts/validar.js"></script>
+</body>
+</html>

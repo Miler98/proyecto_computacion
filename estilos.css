@@ -1,0 +1,177 @@
+header{
+    display: flex;
+    height: 60px;
+    background-color: #252525;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,Roboto,"-apple-system",Helvetica,sans-serif;
+}
+body{
+    background-color: #ffffff;
+}
+
+/* Estilos para el ícono del Menú */
+.icono-menu{
+    margin: 40px 60px;
+    left: 35px;
+    position: relative;
+    z-index: 10;
+}
+
+.icono-menu img{
+    vertical-align: top;
+    width: 28px;
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor del Menú */
+.cont-menu{
+    background-color: white;
+    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
+    width: 205px;
+    height: 60vh;
+    position: absolute; 
+    top: 60px;
+    left: 45px;
+    transition: all .5s ease;
+    font-size: medium;
+}
+
+/* Estilos por agregar en JavaScript */
+.active{
+    transform: translate(-600px);
+}
+
+/* Estilos para el listado del Menú */
+.cont-menu ul{
+    padding: 5px 0px 5px 0px;
+    list-style: none;
+    font-size: smaller;
+}
+
+.cont-menu ul li{
+    color: rgb(97, 97, 97);
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 2px 35px;
+    cursor: pointer;
+    font-size: small;
+}
+
+.cont-menu ul li:hover{
+    background-color: rgb(255, 156, 62);
+    color: white;
+}
+
+.buscar{
+    display: flex; 
+    align-items: center;
+    position: absolute;
+    left: 345px;
+    height: 40px;
+    width: 490px;
+    background: rgb(252, 252, 252);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.search-bar{
+    border: none;
+    background: none;
+    outline: none;
+    color: grey;
+    font-size: 1em;
+    float: left;
+    line-height: 60px;
+    width: 450px;
+}
+
+::placeholder{
+    color: rgb(94, 94, 94);
+}
+
+.boton{
+    width: 30px;
+    height: 35px;
+    text-decoration: none;
+    color: rgb(231, 112, 68);
+    border: none;
+    border-radius: 50%;
+    font-size: 28px;
+}
+
+.container{
+    display: flex; 
+    align-items: center;
+    position: absolute;
+    left: 836px;
+    height: 40px;
+    width: 500px;
+    background: none;  
+}
+
+.este{
+    border: none;
+    margin: 10px;
+    background: none;
+    color: rgb(248, 248, 248);
+    font-size: 1rem;
+}
+
+.este1{
+    border: none;
+    margin: 10px;
+    background: none;
+    color: #240808;
+    font-size: 1rem;
+}
+
+.cont-boton button:hover{
+    color: rgb(231, 112, 68);
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' -25,
+  'opsz' 48
+}
+
+.retraer{
+    display: flex;
+    height: 30px;
+    background-color: #252525;
+    align-items: center;
+    padding: 0x;
+    justify-content: center;   
+    border-top: hsl(0, 0%, 69%);
+}
+
+.botonnav{
+    border: none;
+    margin: 10px;
+    background: none;
+    color: hsl(0, 0%, 79%);
+    font-size: smaller;
+}
+
+
+
