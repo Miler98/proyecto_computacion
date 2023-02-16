@@ -1,0 +1,38 @@
+[
+  {
+    "precio": 15750,
+    "id": 1,
+    "title": "Encanto",
+    "thumbnailUrl": "https://www.themoviedb.org/t/p/w220_and_h330_face/sa3Ku5yNVjp8NloWxJoI9dQjvOi.jpg"
+  },
+  {
+    "precio": 12350,
+    "id": 2,
+    "title": "Vendetta",
+    "thumbnailUrl": "https://www.themoviedb.org/t/p/w220_and_h330_face/7l3war94J4tRyWUiLAGokr3ViF2.jpg"
+  },
+  {
+    "precio": 11120,
+    "id": 3,
+    "title": "Ghost Rider: Spirit of Vengeance",
+    "thumbnailUrl": "https://www.themoviedb.org/t/p/w220_and_h330_face/fDtIZXLNreDHk3mOskJYABrQNOQ.jpg"
+  },
+  {
+    "precio": 18560,
+    "id": 4,
+    "title": "Scream 4",
+    "thumbnailUrl": "https://www.themoviedb.org/t/p/w220_and_h330_face/g0YcSd5QpgGXOjg9tl0if0soOkE.jpg"
+  },
+  {
+    "precio": 16500,
+    "id": 5,
+    "title": "El gato con botas: El ultimo deseo",
+    "thumbnailUrl": "https://www.themoviedb.org/t/p/w220_and_h330_face/kuf6dutpsT0vSVehic3EZIqkOBt.jpg"
+  },
+  {
+    "precio": 14580,
+    "id": 6,
+    "title": "Ant-man and the Wasp: Quantumania",
+    "thumbnailUrl": "https://www.themoviedb.org/t/p/w220_and_h330_face/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg"
+  }
+]
