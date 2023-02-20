@@ -25,7 +25,7 @@ if (!empty($_POST['username']) && !empty($_POST['password'])) {
         if ($stmt->execute()) {
             echo'<script type="text/javascript">
             alert("Usuario creado exitosamente");
-            window.location.href="../index.html";
+            window.location.href="../singin.html";
             </script>';
         } else {
             echo '<script type="text/javascript">

@@ -10,6 +10,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/proyecto_computacion/css/estilos1.css">
 	<link rel="stylesheet" href="tus_peliculas/css/estilos.css">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
 	<title>Tus_peliculas</title>
@@ -23,7 +26,17 @@
 				<a href="tus_peliculas/series.html">Series</a>
 				<a href="peliculas/index.html">Películas</a>
 				<a href="#">Más Recientes</a>
-				<a href="#">Mi Carrito</a>
+				<a href="#"><span class="material-symbols-outlined lead mr-2">shopping_cart</span>Mi Carrito</a>
+
+                <div class="usuario">
+                    <button class="btndesplegar" id="btn-perfil"></button>
+                    <div class="contenido" id="contenido-perfil" style="display:none;">
+                        <p> <?= $_SESSION['infouser'] ?> </p>
+                        <hr>
+                        <a href="DB/cerrar_sesion.php">
+                        <i class="fas fa-sign-in-alt text-color"></i> Salir</a>
+                    </div>
+                </div>
 			</nav>
 		</div>
 	</header>
@@ -124,5 +137,6 @@
 	
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<script src="tus_peliculas/js/main.js"></script>
+    <script src="scripts/perfil.js"></script>
 </body>
 </html>
