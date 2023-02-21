@@ -1,0 +1,58 @@
+:root {
+	--rojo: #E50914;
+	--fondo: #141414;
+  --back-fondo: #180000;
+}
+
+
+body {
+	background: var(--back-fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.btn-info,
+.btn-info:hover,
+.btn-info:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #007da7;
+  font-weight: bold;
+  width: auto;
+  
+}
+
+.btn-info:hover {
+  background-position: 0 -15px;
+  background-color: #026586;
+}
+
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #9a0101;
+  font-weight: bold;
+  width: auto;
+}
+
+.btn-danger:hover {
+  background-position: 0 -15px;
+  background-color: #680202;
+}
+
+
+.btn-dark,
+.btn-dark:hover,
+.btn-dark:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #9a0101;
+  font-weight: bold;
+  width: auto;
+}
+
+.btn-dark:hover {
+  background-position: 0 -15px;
+  background-color: #680202;
+}

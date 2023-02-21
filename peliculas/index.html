@@ -10,39 +10,51 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/personalizado.css" />
+    <link rel="stylesheet" href="../tus_peliculas/css/estilos1.css" />
     <title>Carrito-CineMarket</title>
   </head>
   <body>
-    <div class="container">
+    <header>
+      <div class="contenedor">
+        <h2 class="logotipo">TUS PELÍCULAS</h2>
+        <nav>
+          <a href="../tus_peliculas/index.html" class="activo">Inicio</a>
+          <a href="../tus_peliculas/series.html">Series</a>
+          <a href="../tus_peliculas/mas_recientes.html">Peliculas</a>
+        </nav>
+      </div>
+    </header>
+    <div class="contenedor">
       <hr />
-      <h1>Carrito de Compras</h1>
+      <h1 style="color: aliceblue;">Carrito de Compras</h1>
       <hr />
       <div class="row">
         <div class="col-7">
-          <div class="card-group mt-3 mb-2" id="cards"></div>
+          <div class="card-group" id="cards"></div>
         </div>
         <div class="col-5">
-          <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Item</th>
-              <th scope="col">Cantidad</th>
-              <th scope="col">Acción</th>
-              <th scope="col">Total</th>
-            </tr>
-          </thead>
-          <tbody id="items"></tbody>
-          <tfoot>
-            <tr id="footer">
-              <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
-            </tr>
-          </tfoot>
+          <table class="table table-bordered table-dark">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Item</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Acción</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+              <tr id="footer">
+                <th scope="row" colspan="5">
+                  Carrito vacío - Animate a comprar!
+                </th>
+              </tr>
+            </tfoot>
           </table>
         </div>
-        
       </div>
-      
     </div>
 
     <template id="template-carrito">
@@ -59,16 +71,23 @@
     </template>
 
     <template id="template-card">
-      <div class="col-12 mb-2 col-md-3">
-        <div class="card">
-          <img src="" alt="" class="card-img-top" />
-          <div class="card-body">
-            <h5 class="card-title fs-6">Titulo</h5>
-            <p class="card-text">precio</p>
-            <button class="btn btn-dark">Comprar</button>
+      <div class="col-6 col-sm-3 col-xl-3">
+      <div class="card text-white bg-dark mb-2">
+        <img src="" alt="" class="card-img-top img-fluid" />
+        <div class="card-body">
+          <h5 class="card-title fs-6">Titulo</h5>
+          <td class="font-weight-bold">$<span>precio</span></td>
+        </div>
+        <div class="card-footer">
+          <div style="visibility: hidden; display: none">
+            <h4 class="card-title fs-6">Titulo</h4>
+            <p>precio</p>
           </div>
+
+          <button class="btn btn-dark">Comprar</button>
         </div>
       </div>
+    </div>
     </template>
 
     <template id="template-footer">
@@ -76,10 +95,10 @@
       <td>10</td>
       <td>
         <button class="btn btn-danger btn-sm" id="vaciar-carrito">
-          vaciar todo
+          Vaciar Carrito
         </button>
       </td>
-      <td class="font-weight-bold">$ <span>5000</span></td>
+      <td class="font-weight-bold">$<span>5000</span></td>
     </template>
 
     <script src="app.js"></script>
