@@ -1,0 +1,109 @@
+:root {
+	--rojo: #E50914;
+	--fondo: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header .cont_menu {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+header nav a:hover,
+header nav a.activo_reciente{
+    color: #E50914;
+}
+
+header nav a.activo {
+	color: #FFF;
+}
+.cont_series{
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.cont_series .cont_grid{
+    width: 60%;
+    display: grid;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.cont_series .cont_grid .serie{
+    min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 3px 3px 8px rgba(0,0,0, .3);
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+.cont_series .cont_grid .serie.hover{
+    box-shadow: 3px 3px 8px rgba(255,255,255, .8);
+    transform: scale(1.1);
+	transform-origin: center;
+}
+
+.cont_series .cont_grid .serie img{
+    width: 220 px;
+    height: 280px;
+    cursor: pointer;
+}
+
+.cont_pag{
+    width: 100%;
+    display: flex;
+    padding: 30px 20px;
+    justify-content: center;
+}
+
+.cont_pag button{
+    width: 8%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.cont_pag button:hover{
+    background-color: #AAA;
+}
+
