@@ -1,5 +1,6 @@
 const grid = document.querySelector('.cont_series')
 const series = document.querySelectorAll('.serie')
+const nom_series = document.querySelectorAll('.nom_serie').value
 
 series.forEach((serie) => {
 	serie.addEventListener('mouseenter', (e) => {
@@ -28,3 +29,8 @@ series.forEach((serie) => {
 grid.addEventListener('mouseleave', () => {
 	series.forEach(serie => serie.classList.remove('hover'));
 });
+
+
+
+
+
