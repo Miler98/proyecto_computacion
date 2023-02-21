@@ -1,0 +1,45 @@
+:root {
+	--rojo: #E50914;
+	--fondo: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 35px 0;
+    background-color: #141414;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+    font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 30px;
+}
+
+header nav a {
+    font-family: 'Open Sans', sans-serif;
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}

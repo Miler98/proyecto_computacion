@@ -16,7 +16,7 @@
         } else {
             echo'<script type="text/javascript">
             alert("Credenciales incorrectas");
-            window.location.href="../index.html";
+            window.location.href="../singin.html";
             </script>';
         }
     }

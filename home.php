@@ -23,10 +23,7 @@
 			<h2 class="logotipo">Tus Películas</h2>
 			<nav>
 				<a href="#" class="activo">Inicio</a>
-				<a href="tus_peliculas/series.html">Series</a>
-				<a href="peliculas/index.html">Películas</a>
-				<a href="#">Más Recientes</a>
-				<a href="#"><span class="material-symbols-outlined lead mr-2">shopping_cart</span>Mi Carrito</a>
+				<a href="peliculas/index.html"><span class="material-symbols-outlined lead mr-2">shopping_cart</span>Mi Carrito</a>
 
                 <div class="usuario">
                     <button class="btndesplegar" id="btn-perfil"></button>
