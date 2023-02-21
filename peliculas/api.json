@@ -14,8 +14,8 @@
   {
     "precio": 11120,
     "id": 3,
-    "title": "Ghost Rider: Spirit of Vengeance",
-    "thumbnailUrl": "https://www.themoviedb.org/t/p/w220_and_h330_face/fDtIZXLNreDHk3mOskJYABrQNOQ.jpg"
+    "title": "El Padrino",
+    "thumbnailUrl": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
   },
   {
     "precio": 18560,
@@ -34,5 +34,41 @@
     "id": 6,
     "title": "Ant-man and the Wasp: Quantumania",
     "thumbnailUrl": "https://www.themoviedb.org/t/p/w220_and_h330_face/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg"
+  },
+  {
+    "precio": 14580,
+    "id": 7,
+    "title": "Ghost Rider: Spirit of Vengeance",
+    "thumbnailUrl": "https://www.themoviedb.org/t/p/w220_and_h330_face/fDtIZXLNreDHk3mOskJYABrQNOQ.jpg"
+  },
+  {
+    "precio": 18900,
+    "id": 8,
+    "title": "The Shawshank Redemption",
+    "thumbnailUrl": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/hBcY0fE9pfXzvVaY4GKarweriG2.jpg"
+  },
+  {
+    "precio": 17600,
+    "id": 9,
+    "title": "La La Land",
+    "thumbnailUrl": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg"
+  },
+  {
+    "precio": 12000,
+    "id": 10,
+    "title": "Jurassic Park",
+    "thumbnailUrl": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/oU7Oq2kFAAlGqbU4VoAE36g4hoI.jpg"
+  },
+  {
+    "precio": 18900,
+    "id": 11,
+    "title": "Forrest Gump",
+    "thumbnailUrl": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg"
+  },
+  {
+    "precio": 15000,
+    "id": 12,
+    "title": "Your Name",
+    "thumbnailUrl": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/q719jXXEzOoYaps6babgKnONONX.jpg"
   }
 ]
