@@ -131,6 +131,61 @@
 			</div>
 		</div>
 	</main>
+	<footer style="background-color: #1b1b1b; padding: 20px;">
+		<div class="footer-container">
+		  <div class="footer-section">
+		  <br>
+			<ul class="social-icons">
+			  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+			  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+			  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+			  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+			</ul>
+			<br>
+			<p class="derechos">© 2023 Tus Películas. Todos los derechos reservados.</p>
+		  </div>
+		</div>
+	  </footer>
+	  
+	  <style>
+		.footer-container {
+		  display: flex;
+		  justify-content: center;
+		  flex-wrap: wrap;
+		}
+		.footer-section {
+		  flex: 1;
+		  margin: 0 10px;
+		}
+		.footer-section h3 {
+		  color: white;
+		}
+		.social-icons {
+		  list-style: none;
+		  padding: 0;
+		  display: flex;
+		  justify-content: center;
+		}
+		.social-icons li {
+		  margin-right: 20px;
+		}
+		.social-icons a {
+		  color: antiquewhite;
+		  font-size: 34px;
+		}
+		.derechos{
+			color: antiquewhite;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			align-self: center;
+		}
+	  </style>
+	  
+	
+	<!-- Importa Font Awesome para los iconos -->
+	<script src="https://kit.fontawesome.com/71b9e775fc.js" crossorigin="anonymous"></script>
 	
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<script src="tus_peliculas/js/main.js"></script>
