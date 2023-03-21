@@ -6,15 +6,16 @@
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/estilos-bar.css">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<title>Tus_peliculas</title>
 </head>
 <body>
 	<header>
 		<div class="contenedor">
 			<h2 class="logotipo">Tus Películas</h2>
-			<form class="search-bar">
-				<input type="text" placeholder="Buscar películas o series" name="q">
-				<button type="submit"><img class="imagen" src="img/search.png" alt=""></button>
+			<form class="search-bar" method="POST" action="/home.php" name="buscador" id="buscador">
+				<input type="text" placeholder="Buscar películas o series" name="buscando">
+				<input type="button" id="btn_buscar" name="btn_buscar"><img class="imagen" src="img/search.png" alt=""></button>
 			</form>
 			<nav>
 				<a href="#" class="activo">Inicio</a>
