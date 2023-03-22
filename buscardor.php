@@ -12,6 +12,7 @@
 </head>
 <body>
     <?php
+        echo '<p>esta en el buscador</p>';
         $busqueda = $_GET['nombre'];
         $consulta = $con->query("SELECT * FROM peliculas WHERE nompeli LIKE '%$busqueda%'");
         
@@ -19,10 +20,10 @@
         while ($row = $consulta -> fetch_array()){
             if ($row['nompeli'] == $busqueda){
                 $info = $row['info'];
-                header("Location: ./tus_peliculas/$info.html");
+                header("Location: ../tus_peliculas/$info.html");
             }
             else{
-                header("Location: ./tus_peliculas/no_encontrado.html");
+                header("Location: ../tus_peliculas/no_encontrado.html");
             }
         }
     ?> 
