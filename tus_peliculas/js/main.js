@@ -5,6 +5,7 @@ const flechaIzquierda = document.getElementById('flecha-izquierda');
 const flechaDerecha = document.getElementById('flecha-derecha');
 
 //  ----- ----- Event Listener para la flecha derecha. ----- -----
+
 flechaDerecha.addEventListener('click', () => {
 	fila.scrollLeft += fila.offsetWidth;
 
@@ -14,6 +15,7 @@ flechaDerecha.addEventListener('click', () => {
 		indicadorActivo.classList.remove('activo');
 	}
 });
+
 
 //  ----- ----- Event Listener para la flecha izquierda. ----- -----
 flechaIzquierda.addEventListener('click', () => {

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <title>Tus_peliculas</title>
+</head>
+
+<body>
+    <header >
+		<div class="contenedor">
+			<h2 class="logotipo">Tus Películas</h2>
+			<form class="search-bar">
+				<input type="text" placeholder="Buscar películas o series" name="q">
+				<button type="submit"><img class="imagen" src="img/search.png" alt=""></button>
+			</form>
+			<nav>
+				<a href="../home.php" class="activo">Inicio</a>
+				<a href="login_pelicula.html">Peliculas</a>
+				<a href="login_serie.html">Series</a>
+			</nav>
+		</div>
+	</header>
+
+    <br>
+
+    <main class="bg-white">
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col">
+                    <br><br>
+                    <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+                    <br><br>
+                    <form id="procesar-pago">
+                        <div id="carrito" class="form-group table-responsive" >
+                            <table class="form-group table" id="lista-compra" >
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Sub Total</th>
+                                        <th scope="col">Eliminar</th>
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                </tbody>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+                                    <th scope="col">
+                                        <p id="subtotal"></p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">IVA :</th>
+                                    <th scope="col">
+                                        <p id="igv"></p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                                    <th scope="col">
+                                        <input id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></input>
+                                    </th>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                        <div class="row justify-content-center" id="loaders">
+                            <img id="cargando" src="img/cargando.gif" width="220">
+                        </div>
+
+                        <div class="row justify-content-between">
+                            <div class="col-md-4 mb-2">
+                                <a href="login_pelicula.html" class="btn btn-info btn-block">Seguir comprando</a>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <input type="submit" class="btn btn-success btn-block" id="procesar-compra" value="Realizar compra">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+                <br><br>
+				<h3>Películas Recomendadas</h3>
+				<div class="indicadores"></div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/5.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/6.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/7.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/5.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/6.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/7.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/1.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/2.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/3.png" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#"><img src="img/4.png" alt=""></a>
+						</div>	
+					</div>
+				</div>
+				<button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+			</div>
+		</div>
+
+
+    </main>
+
+    <footer style="background-color: #222222; padding: 0px;">
+		<div class="footer-container">
+		  <div class="footer-section">
+			<br>
+			<ul class="social-icons">
+			  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+			  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+			  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+			  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+			</ul>
+            <ul class="social-foo"> 
+                <li><a href="#">Quienes somos</a></li>
+			    <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+			<p class="derechos">© 2023 Tus Películas. Todos los derechos reservados.</p>
+		  </div>
+		</div>
+	  </footer>
+      <style>
+		.search-bar{
+		background: rgba(94, 94, 94, 0.363);
+		display: flex;
+		align-items: center;
+		border-radius: 50px;
+		padding: 5px 35px;
+		backdrop-filter: blur(4px) saturate(180%);
+		}
+		.search-bar input{
+		background: transparent;
+		flex: 1;
+		border: 0;
+		outline: none;
+		padding: 10px 20px;
+		font-size: 16px;
+		color: #cac7ff;
+		}
+		::placeholder{
+			color: #63636d8f;
+		}
+		.search-bar button{
+			border: 0;
+			border-radius: 50%;
+			width: 33px;
+			height: 33px;
+			background: #e4091475;
+			cursor: pointer;
+		}
+		.imagen{
+			width: 20px;
+			height: 20px;
+		}
+		.footer-container {
+		  display: flex;
+		  justify-content: center;
+		  flex-wrap: wrap;
+          background-color: #181818;
+		}
+		.footer-section {
+		  flex: 1;
+		  margin: 0 10px;
+		}
+		.footer-section h3 {
+		  color: white;
+		}
+		.social-icons {
+		  list-style: none;
+		  padding: 0;
+		  display: flex;
+		  justify-content: center;
+		}
+		.social-icons li {
+		  margin-right: 18px;
+		}
+		.social-icons a {
+		  color: antiquewhite;
+		  font-size: 30px;
+		}
+		.social-icons a:hover {
+		  color: #e40914;
+		}
+		.social-foo {
+		  list-style: none;
+		  padding: 0;
+		  display: flex;
+		  justify-content: center;
+		}
+        .social-foo li {
+		  color: #9e9e9e;
+		  font-size: 15px;
+		  margin-right: 40px;
+		}
+		.social-foo a {
+		  color: #ffffff;
+		  font-size: 15px;
+		  margin-right: 40px;
+		}
+		.social-foo a:hover{
+    		color: rgb(255, 255, 255);
+		}
+		.derechos{
+			color: #aaa;
+			display: flex;
+			font-size: 15px;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			align-self: center;
+		}
+	  </style>
+	 
+    </div>
+    <!-- Importa Font Awesome para los iconos -->
+	<script src="https://kit.fontawesome.com/71b9e775fc.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+
+    <script src="js/carrito.js"></script>
+    <script src="js/compra.js"></script>
+
+
+</body>
+
+</html>

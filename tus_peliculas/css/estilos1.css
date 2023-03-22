@@ -16,7 +16,7 @@
 
 header {
 	padding: 35px 0;
-    background-color: #141414;
+    background-color: #181818;
 }
 
 header .contenedor {
@@ -29,7 +29,7 @@ header .logotipo {
     font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	color: var(--rojo);
-	font-size: 30px;
+	font-size: 50px;
 }
 
 header nav a {
