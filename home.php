@@ -144,52 +144,16 @@
 				<div class="contenedor-carousel">
 					<div class="carousel">
 						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/21.jpg" alt=""></a>
+							<a href="#"><img src="tus_peliculas/img/30.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/22.png" alt=""></a>
+							<a href="#"><img src="tus_peliculas/img/31.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/23.jpg" alt=""></a>
+							<a href="#"><img src="tus_peliculas/img/32.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/24.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/25.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/26.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/27.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/28.png" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/21.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/22.png" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/23.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/24.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/25.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/26.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/27.jpg" alt=""></a>
-						</div>
-						<div class="pelicula">
-							<a href="#"><img src="tus_peliculas/img/28.png" alt=""></a>
+							<a href="#"><img src="tus_peliculas/img/33.jpg" alt=""></a>
 						</div>
 					</div>
 				</div>
