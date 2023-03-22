@@ -51,7 +51,7 @@ header nav a.activo {
 .cont_visualizar{
     width: 80%;
     margin: auto;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/tus_peliculas/img/fondo.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url("../tus_peliculas/img/fondo.jpg");
 }
 
 .cont_visualizar .grid_info{
@@ -108,3 +108,4 @@ header nav a.activo {
     font-size: 40px;
     color: #E50914;
 }
+

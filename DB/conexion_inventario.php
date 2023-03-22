@@ -1,12 +1,12 @@
 <?php
-    $server = 'localhost';
-    $username = 'root';
-    $password = '';
-    $database = 'inventario';
+    $Chost = 'localhost';
+    $Cuser = 'root';
+    $Cpass = '';
+    $Cdb = 'inventario';
 
-    try {
-    $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
-    } catch (PDOException $e) {
-    die('Coneccion fallida: ' . $e->getMessage());
+    $con = new mysqli($Chost,$Cuser,$Cpass,$Cdb);
+
+    if ($con->connect_errno){
+        die("Ha ocurrido un error");
     }
 ?>

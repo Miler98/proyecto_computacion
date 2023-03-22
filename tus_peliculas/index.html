@@ -13,9 +13,9 @@
 	<header>
 		<div class="contenedor">
 			<h2 class="logotipo">Tus Películas</h2>
-			<form class="search-bar" method="POST" action="/home.php" name="buscador" id="buscador">
-				<input type="text" placeholder="Buscar películas o series" name="buscando">
-				<input type="button" id="btn_buscar" name="btn_buscar"><img class="imagen" src="img/search.png" alt=""></button>
+			<form class="search-bar" method="get" action="../buscardor.php">
+				<input type="text" placeholder="Buscar películas o series" name="nombre">
+				<button type="submit" id="btn_buscar" name="btn_buscar"><img class="imagen" src="img/search.png" alt=""></button>
 			</form>
 			<nav>
 				<a href="#" class="activo">Inicio</a>
